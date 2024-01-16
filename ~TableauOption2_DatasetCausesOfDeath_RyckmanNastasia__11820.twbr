@@ -1,0 +1,1644 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='classic' />
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='CauseSelector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Drowning&quot;'>
+        <calculation class='tableau' formula='&quot;Drowning&quot;' />
+        <members>
+          <member value='&quot;Acute hepatitis&quot;' />
+          <member value='&quot;Alcohol use disorders&quot;' />
+          <member value='&quot;Alzheimer&apos;s disease and other dementias&quot;' />
+          <member value='&quot;Cardiovascular diseases&quot;' />
+          <member value='&quot;Chronic kidney disease&quot;' />
+          <member value='&quot;Chronic respiratory diseases&quot;' />
+          <member value='&quot;Cirrhosis and other chronic liver diseases&quot;' />
+          <member value='&quot;Conflict and terrorism&quot;' />
+          <member value='&quot;Diabetes mellitus&quot;' />
+          <member value='&quot;Diarrheal diseases&quot;' />
+          <member value='&quot;Digestive diseases&quot;' />
+          <member value='&quot;Drowning&quot;' />
+          <member value='&quot;Drug use disorders&quot;' />
+          <member value='&quot;Environmental heat and cold exposure&quot;' />
+          <member value='&quot;Exposure to forces of nature&quot;' />
+          <member value='&quot;Fire, heat, and hot substances&quot;' />
+          <member value='&quot;HIV/AIDS&quot;' />
+          <member value='&quot;Interpersonal violence&quot;' />
+          <member value='&quot;Lower respiratory infections&quot;' />
+          <member value='&quot;Malaria&quot;' />
+          <member value='&quot;Maternal disorders&quot;' />
+          <member value='&quot;Meningitis&quot;' />
+          <member value='&quot;Neonatal disorders&quot;' />
+          <member value='&quot;Neoplasms&quot;' />
+          <member value='&quot;Number of executions (Amnesty International)&quot;' />
+          <member value='&quot;Nutritional deficiencies&quot;' />
+          <member value='&quot;Parkinson&apos;s disease&quot;' />
+          <member value='&quot;Poisonings&quot;' />
+          <member value='&quot;Protein-energy malnutrition&quot;' />
+          <member value='&quot;Road injuries&quot;' />
+          <member value='&quot;Self-harm&quot;' />
+          <member value='&quot;Terrorism (deaths)&quot;' />
+          <member value='&quot;Tuberculosis&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='20222703 Causes Of Death Clean Output V2.0' inline='true' name='federated.091u26n1vu7qvt191b1jc02r8eyg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='20222703 Causes Of Death Clean Output V2.0' name='textscan.01utfwt1kwzgvv113vo0u128xplp'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/nasta/Downloads/archive/20222703 Causes Of Death Clean Output V2.0.csv' dataRefreshTime='' directory='C:/Users/nasta/Downloads/archive' filename='C:/Users/nasta/AppData/Local/Temp/TableauTemp/0w50qkg1bh22a118qfnla169azpa/20222703 Causes Of Death Clean Output V2.0.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='f8948141-f820-4342-a9ac-a59aba59189d_Data' name='textscan.156z50s1ovacdl1go7m54047r3kh'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:\Users\nasta\Downloads\P_Data_Extract_From_World_Development_Indicators(2)\f8948141-f820-4342-a9ac-a59aba59189d_Data.csv' dataRefreshTime='' directory='C:/Users/nasta/Downloads/P_Data_Extract_From_World_Development_Indicators(2)' filename='C:/Users/nasta/AppData/Local/Temp/TableauTemp/1azqmzr0kjx03h15wzqke0iivs4e/f8948141-f820-4342-a9ac-a59aba59189d_Data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Canada_Pop' name='excel-direct.01ne1xj0rt6nwh166plpy0fydkco'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Tableau-Project/Canada_Pop.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='WorldBank_Populations' name='textscan.153m1t90bcypu019hvbq910sz9c4'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='D:/Tableau-Project/Data/WorldBank_Populations.csv' dataRefreshTime='' directory='D:/Tableau-Project/Data' filename='C:/Users/nasta/AppData/Local/Temp/TableauTemp/0wq2yls1ppwzrj166t19b1klk4nh/WorldBank_Populations.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.01utfwt1kwzgvv113vo0u128xplp' name='20222703 Causes Of Death Clean Output V2.0.csv' table='[20222703 Causes Of Death Clean Output V2.0#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:F10001:no:A1:F10001:1' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Causes name' ordinal='0' />
+            <column datatype='string' name='Causes Full Description' ordinal='1' />
+            <column datatype='integer' name='Death Numbers' ordinal='2' />
+            <column datatype='string' name='Entity' ordinal='3' />
+            <column datatype='string' name='Code' ordinal='4' />
+            <column datatype='integer' name='Year' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.01utfwt1kwzgvv113vo0u128xplp' name='20222703 Causes Of Death Clean Output V2.0.csv' table='[20222703 Causes Of Death Clean Output V2.0#csv]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:F10001:no:A1:F10001:1' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='Causes name' ordinal='0' />
+              <column datatype='string' name='Causes Full Description' ordinal='1' />
+              <column datatype='integer' name='Death Numbers' ordinal='2' />
+              <column datatype='string' name='Entity' ordinal='3' />
+              <column datatype='string' name='Code' ordinal='4' />
+              <column datatype='integer' name='Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.153m1t90bcypu019hvbq910sz9c4' name='WorldBank_Populations.csv' table='[WorldBank_Populations#csv$]' type='table'>
+            <columns gridOrigin='A1:E6122:no:A1:E6122:2'>
+              <column datatype='string' name='Country Name Country Name' ordinal='0' />
+              <column datatype='string' name='Country Code Country Code' ordinal='1' />
+              <column datatype='string' name='Series Name Series Name' ordinal='2' />
+              <column datatype='integer' name='Year Year' ordinal='3' />
+              <column datatype='integer' name='Population Population' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[20222703 Causes Of Death Clean Output V2.0.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WorldBank_Populations.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E6122:no:A1:E6122:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>12240</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Causes name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Causes name]</local-name>
+            <parent-name>[20222703 Causes Of Death Clean Output V2.0.csv]</parent-name>
+            <remote-alias>Causes name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Causes Full Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Causes Full Description]</local-name>
+            <parent-name>[20222703 Causes Of Death Clean Output V2.0.csv]</parent-name>
+            <remote-alias>Causes Full Description</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Death Numbers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Death Numbers]</local-name>
+            <parent-name>[20222703 Causes Of Death Clean Output V2.0.csv]</parent-name>
+            <remote-alias>Death Numbers</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity]</local-name>
+            <parent-name>[20222703 Causes Of Death Clean Output V2.0.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[20222703 Causes Of Death Clean Output V2.0.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[20222703 Causes Of Death Clean Output V2.0.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Name Country Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Name Country Name]</local-name>
+            <parent-name>[WorldBank_Populations.csv]</parent-name>
+            <remote-alias>Country Name Country Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldBank_Populations.csv_2EAA8202A02E47CCB8CB691436284205]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Code Country Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Code Country Code]</local-name>
+            <parent-name>[WorldBank_Populations.csv]</parent-name>
+            <remote-alias>Country Code Country Code</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldBank_Populations.csv_2EAA8202A02E47CCB8CB691436284205]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Series Name Series Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Series Name Series Name]</local-name>
+            <parent-name>[WorldBank_Populations.csv]</parent-name>
+            <remote-alias>Series Name Series Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldBank_Populations.csv_2EAA8202A02E47CCB8CB691436284205]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Year]</local-name>
+            <parent-name>[WorldBank_Populations.csv]</parent-name>
+            <remote-alias>Year Year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldBank_Populations.csv_2EAA8202A02E47CCB8CB691436284205]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population Population]</local-name>
+            <parent-name>[WorldBank_Populations.csv]</parent-name>
+            <remote-alias>Population Population</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WorldBank_Populations.csv_2EAA8202A02E47CCB8CB691436284205]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([Population Population])) - LOOKUP(ZN(SUM([Population Population])), -1)'>
+          <table-calc ordering-type='Field'>
+            <order field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Country Code Country Code]' />
+            <order field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Country Name Country Name]' />
+          </table-calc>
+        </calculation>
+      </column>
+      <column caption='FilteredCause' datatype='boolean' name='[Calculation_1074390029560340480]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Causes name] = [Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Deaths Per Capita' datatype='real' name='[Calculation_382243062475091969]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([Death Numbers])/SUM([Population Population]))*100' />
+      </column>
+      <column caption='RankTopDeathsByCause' datatype='integer' name='[Calculation_590816017834442755]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(SUM([Death Numbers]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+      <column caption='Country Code' datatype='string' name='[Country Code Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Name' datatype='string' name='[Country Name Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Entity]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Population' datatype='integer' name='[Population Population]' role='measure' type='quantitative' />
+      <column caption='Series Name' datatype='string' name='[Series Name Series Name]' role='dimension' type='nominal' />
+      <column caption='Population Year' datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='CausesOfDeathCleanOutputV2.0.csv' datatype='table' name='[__tableau_internal_object_id__].[20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='WorldBank_Populations.csv' datatype='table' name='[__tableau_internal_object_id__].[WorldBank_Populations.csv_2EAA8202A02E47CCB8CB691436284205]' role='measure' type='quantitative' />
+      <column-instance column='[Causes name]' derivation='None' name='[none:Causes name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Country Code,Country Name)' hidden='true' name='[Action (Country Code,Country Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country Code Country Code]' />
+          <groupfilter function='level-members' level='[Country Name Country Name]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Causes name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Protein-energy malnutrition&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Acute hepatitis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maternal disorders&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Chronic kidney disease&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Number of executions (Amnesty International)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Drug use disorders&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tuberculosis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Diarrheal diseases&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Road injuries&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chronic respiratory diseases&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nutritional deficiencies&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lower respiratory infections&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Neoplasms&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alcohol use disorders&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Meningitis&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;HIV/AIDS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cirrhosis and other chronic liver diseases&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Parkinson&apos;s disease&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Environmental heat and cold exposure&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Exposure to forces of nature&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Interpersonal violence&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Malaria&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Digestive diseases&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Self-harm&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Conflict and terrorism&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Poisonings&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alzheimer&apos;s disease and other dementias&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Neonatal disorders&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Diabetes mellitus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fire, heat, and hot substances&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Drowning&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Terrorism (deaths)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cardiovascular diseases&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#bab0ac'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='CauseSelector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Drowning&quot;'>
+          <calculation class='tableau' formula='&quot;Drowning&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CausesOfDeathCleanOutputV2.0.csv' id='20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073'>
+            <properties context=''>
+              <relation connection='textscan.01utfwt1kwzgvv113vo0u128xplp' name='20222703 Causes Of Death Clean Output V2.0.csv' table='[20222703 Causes Of Death Clean Output V2.0#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:F10001:no:A1:F10001:1' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='Causes name' ordinal='0' />
+                  <column datatype='string' name='Causes Full Description' ordinal='1' />
+                  <column datatype='integer' name='Death Numbers' ordinal='2' />
+                  <column datatype='string' name='Entity' ordinal='3' />
+                  <column datatype='string' name='Code' ordinal='4' />
+                  <column datatype='integer' name='Year' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='WorldBank_Populations.csv' id='WorldBank_Populations.csv_2EAA8202A02E47CCB8CB691436284205'>
+            <properties context=''>
+              <relation connection='textscan.153m1t90bcypu019hvbq910sz9c4' name='WorldBank_Populations.csv' table='[WorldBank_Populations#csv$]' type='table'>
+                <columns gridOrigin='A1:E6122:no:A1:E6122:2'>
+                  <column datatype='string' name='Country Name Country Name' ordinal='0' />
+                  <column datatype='string' name='Country Code Country Code' ordinal='1' />
+                  <column datatype='string' name='Series Name Series Name' ordinal='2' />
+                  <column datatype='integer' name='Year Year' ordinal='3' />
+                  <column datatype='integer' name='Population Population' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Code]' />
+              <expression op='[Country Code Country Code]' />
+            </expression>
+            <first-end-point object-id='20222703 Causes Of Death Clean Output V2.0.csv_2DC64585AFFD47B1AF6375B5A3ABA073' />
+            <second-end-point object-id='WorldBank_Populations.csv_2EAA8202A02E47CCB8CB691436284205' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_A50DABF2CE5A4EBEB37D58A5D1523B13]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Causes of Death - Dash' type='sheet' worksheet='Map - Deaths Per Capita' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Causes of Death - Dash' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Box Plot - country outliers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Entity]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Entity:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7AB27C74-572E-45D1-8F30-CF052FD54398}' />
+    </worksheet>
+    <worksheet name='Box Plot - deaths outliers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column-instance column='[Causes name]' derivation='None' name='[none:Causes name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FBCD4967-E1DB-4C56-864B-63BAE09982F4}' />
+    </worksheet>
+    <worksheet name='Deaths by Causes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column-instance column='[Causes name]' derivation='None' name='[none:Causes name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#333333' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]</rows>
+        <cols>[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]</cols>
+      </table>
+      <simple-id uuid='{5FAD642F-9BA2-471C-A629-0D0DAE02433A}' />
+    </worksheet>
+    <worksheet name='Diseases Over Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column caption='Deaths Per Capita' datatype='real' name='[Calculation_382243062475091969]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([Death Numbers])/SUM([Population Population]))*100' />
+            </column>
+            <column datatype='string' name='[Causes Full Description]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column caption='Population' datatype='integer' name='[Population Population]' role='measure' type='quantitative' />
+            <column caption='Population Year' datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Causes Full Description]' derivation='Attribute' name='[attr:Causes Full Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Causes name]' derivation='None' name='[none:Causes name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year Year]' derivation='None' name='[none:Year Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_382243062475091969]' derivation='User' name='[usr:Calculation_382243062475091969:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]'>
+            <groupfilter function='member' level='[none:Causes name:nk]' member='&quot;Alcohol use disorders&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Year Year:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]</column>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Year Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_382243062475091969:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[attr:Causes Full Description:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#333333' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_382243062475091969:qk]</rows>
+        <cols>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Year Year:qk]</cols>
+      </table>
+      <simple-id uuid='{9867EBAE-2EA9-4F1B-8B0F-28069EA3EFC2}' />
+    </worksheet>
+    <worksheet name='Forecasting'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt; </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column caption='Deaths Per Capita' datatype='real' name='[Calculation_382243062475091969]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([Death Numbers])/SUM([Population Population]))*100' />
+            </column>
+            <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+            <column caption='Country Code' datatype='string' name='[Country Code Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Name' datatype='string' name='[Country Name Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Entity]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Population' datatype='integer' name='[Population Population]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Entity]' derivation='Attribute' name='[attr:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_382243062475091969]' derivation='User' forecast-column-base='[usr:Calculation_382243062475091969:qk]' forecast-column-type='forecast-value' name='[fVal:usr:Calculation_382243062475091969:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Causes name]' derivation='None' name='[none:Causes name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_382243062475091969]' derivation='User' name='[usr:Calculation_382243062475091969:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Action (Country Code,Country Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_A50DABF2CE5A4EBEB37D58A5D1523B13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[Country Code Country Code]' member='&quot;CAN&quot;' />
+              <groupfilter function='member' level='[Country Name Country Name]' member='&quot;Canada&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]'>
+            <groupfilter function='level-members' level='[none:Causes name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Entity:nk]'>
+            <groupfilter function='level-members' level='[none:Entity:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]</column>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Entity:nk]</column>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[Action (Country Code,Country Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[fVal:usr:Calculation_382243062475091969:qk]' value='#e15759' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[fVal:usr:Calculation_382243062475091969:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[fVal:usr:Calculation_382243062475091969:qk]' value='p0.000%' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Entity:nk]' value='Country' />
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-style' value='dotted' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='text-align' value='auto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Forecast Indicator:nk]' />
+              <tooltip column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[attr:Entity:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[fVal:usr:Calculation_382243062475091969:qk]</rows>
+        <cols>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Year:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{180E61C0-4019-44C0-A5D4-3D57B6960362}' />
+    </worksheet>
+    <worksheet name='Map - Deaths Per Capita'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column caption='Deaths Per Capita' datatype='real' name='[Calculation_382243062475091969]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([Death Numbers])/SUM([Population Population]))*100' />
+            </column>
+            <column caption='Country Code' datatype='string' name='[Country Code Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Name' datatype='string' name='[Country Name Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column caption='Population' datatype='integer' name='[Population Population]' role='measure' type='quantitative' />
+            <column-instance column='[Country Code Country Code]' derivation='None' name='[none:Country Code Country Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country Name Country Name]' derivation='None' name='[none:Country Name Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_382243062475091969]' derivation='User' name='[usr:Calculation_382243062475091969:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[Latitude (generated)]</column>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Longitude (generated)]' field-type='quantitative' max='-1122496.9480685275' min='-20909120.36805626' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Latitude (generated)]' field-type='quantitative' max='10503138.488680281' min='-947959.67630576808' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_382243062475091969:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_382243062475091969:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_382243062475091969:qk]' palette='red_black_white_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Country Name Country Name:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Country Name Country Name:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Country Name Country Name:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Country Code Country Code:nk]' />
+              <lod column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Country Name Country Name:nk]' />
+              <size column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_382243062475091969:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#bab0ac' />
+                <format attr='has-halo' value='true' />
+                <format attr='halo-color' value='#e15759' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[Latitude (generated)]</rows>
+        <cols>[federated.091u26n1vu7qvt191b1jc02r8eyg].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{28507CD0-515C-416E-B1ED-2DD919F2CD9D}' />
+    </worksheet>
+    <worksheet name='Map - Temperature'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column datatype='string' name='[Code]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Entity]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Code]' derivation='None' name='[none:Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Longitude (generated)]' field-type='quantitative' max='27556572.86144821' min='-27416016.888455998' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Latitude (generated)]' field-type='quantitative' max='21760717.056462895' min='-9974376.4333065096' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' palette='red_black_white_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Code:nk]' />
+              <lod column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Entity:nk]' />
+              <color column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' />
+              <geometry column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[Latitude (generated)]</rows>
+        <cols>[federated.091u26n1vu7qvt191b1jc02r8eyg].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{69C7B501-62DC-41CD-988D-438B25289385}' />
+    </worksheet>
+    <worksheet name='Most deaths - Bubble'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column datatype='string' name='[Causes Full Description]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column-instance column='[Causes Full Description]' derivation='None' name='[none:Causes Full Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Causes name]' derivation='None' name='[none:Causes name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' />
+              <lod column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes Full Description:nk]' />
+              <text column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#333333' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{71361C88-3227-4BD0-808D-DE72EDC0B9CE}' />
+    </worksheet>
+    <worksheet name='Time series'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='CauseSelector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Drowning&quot;'>
+              <calculation class='tableau' formula='&quot;Drowning&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column caption='FilteredCause' datatype='boolean' name='[Calculation_1074390029560340480]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Causes name] = [Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='string' name='[Causes Full Description]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Causes Full Description]' derivation='Attribute' name='[attr:Causes Full Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1074390029560340480]' derivation='None' name='[none:Calculation_1074390029560340480:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Calculation_1074390029560340480:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1074390029560340480:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Calculation_1074390029560340480:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.091u26n1vu7qvt191b1jc02r8eyg].[attr:Causes Full Description:nk]' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='parameter-ctrl'>
+            <format attr='title' field='[Parameters].[Parameter 1]' value='Select Cause' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[attr:Causes Full Description:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year: </run>
+                <run bold='true'><![CDATA[<[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Description: </run>
+                <run bold='true'><![CDATA[<[federated.091u26n1vu7qvt191b1jc02r8eyg].[attr:Causes Full Description:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Death Numbers: </run>
+                <run bold='true'><![CDATA[<[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#555555' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]</rows>
+        <cols>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{89712CAA-89F6-4A40-993E-98B16EC123AB}' />
+    </worksheet>
+    <worksheet name='Top Causes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium'>Top 10 Causes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20222703 Causes Of Death Clean Output V2.0' name='federated.091u26n1vu7qvt191b1jc02r8eyg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.091u26n1vu7qvt191b1jc02r8eyg'>
+            <column caption='RankTopDeathsByCause' datatype='integer' name='[Calculation_590816017834442755]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK_UNIQUE(SUM([Death Numbers]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Causes name]' role='dimension' type='nominal' />
+            <column caption='Country Code' datatype='string' name='[Country Code Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Name' datatype='string' name='[Country Name Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Death Numbers]' role='measure' type='quantitative' />
+            <column-instance column='[Causes name]' derivation='None' name='[none:Causes name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Death Numbers]' derivation='Sum' name='[sum:Death Numbers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_590816017834442755]' derivation='User' name='[usr:Calculation_590816017834442755:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[Action (Country Code,Country Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_A50DABF2CE5A4EBEB37D58A5D1523B13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[Country Code Country Code]' member='&quot;CAN&quot;' />
+              <groupfilter function='member' level='[Country Name Country Name]' member='&quot;Canada&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_590816017834442755:qk:3]' included-values='in-range'>
+            <max>10</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_590816017834442755:qk:3]</column>
+            <column>[federated.091u26n1vu7qvt191b1jc02r8eyg].[Action (Country Code,Country Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_590816017834442755:qk:3]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Rank &lt;</run>
+                <run>[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_590816017834442755:qk:3]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]</rows>
+        <cols>[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]</cols>
+      </table>
+      <simple-id uuid='{87CF30E5-A09A-45D3-BCA4-AA40AAF46E7D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Causes of Death - Dash'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='CauseSelector' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Drowning&quot;'>
+          <calculation class='tableau' formula='&quot;Drowning&quot;' />
+          <members>
+            <member value='&quot;Acute hepatitis&quot;' />
+            <member value='&quot;Alcohol use disorders&quot;' />
+            <member value='&quot;Alzheimer&apos;s disease and other dementias&quot;' />
+            <member value='&quot;Cardiovascular diseases&quot;' />
+            <member value='&quot;Chronic kidney disease&quot;' />
+            <member value='&quot;Chronic respiratory diseases&quot;' />
+            <member value='&quot;Cirrhosis and other chronic liver diseases&quot;' />
+            <member value='&quot;Conflict and terrorism&quot;' />
+            <member value='&quot;Diabetes mellitus&quot;' />
+            <member value='&quot;Diarrheal diseases&quot;' />
+            <member value='&quot;Digestive diseases&quot;' />
+            <member value='&quot;Drowning&quot;' />
+            <member value='&quot;Drug use disorders&quot;' />
+            <member value='&quot;Environmental heat and cold exposure&quot;' />
+            <member value='&quot;Exposure to forces of nature&quot;' />
+            <member value='&quot;Fire, heat, and hot substances&quot;' />
+            <member value='&quot;HIV/AIDS&quot;' />
+            <member value='&quot;Interpersonal violence&quot;' />
+            <member value='&quot;Lower respiratory infections&quot;' />
+            <member value='&quot;Malaria&quot;' />
+            <member value='&quot;Maternal disorders&quot;' />
+            <member value='&quot;Meningitis&quot;' />
+            <member value='&quot;Neonatal disorders&quot;' />
+            <member value='&quot;Neoplasms&quot;' />
+            <member value='&quot;Number of executions (Amnesty International)&quot;' />
+            <member value='&quot;Nutritional deficiencies&quot;' />
+            <member value='&quot;Parkinson&apos;s disease&quot;' />
+            <member value='&quot;Poisonings&quot;' />
+            <member value='&quot;Protein-energy malnutrition&quot;' />
+            <member value='&quot;Road injuries&quot;' />
+            <member value='&quot;Self-harm&quot;' />
+            <member value='&quot;Terrorism (deaths)&quot;' />
+            <member value='&quot;Tuberculosis&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='14' param='vert' type-v2='layout-flow' w='99064' x='468' y='893'>
+            <zone h='4576' id='15' type-v2='title' w='99064' x='468' y='893'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93638' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='5469'>
+              <zone fixed-size='733' h='93638' id='3' is-fixed='true' param='vert' type-v2='layout-flow' w='42891' x='468' y='5469'>
+                <zone fixed-size='463' h='52567' id='5' is-fixed='true' name='Map - Deaths Per Capita' w='42891' x='468' y='5469'>
+                  <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='41071' id='35' name='Forecasting' w='42891' x='468' y='58036'>
+                  <layout-cache minheight='198' minwidth='181' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='93638' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='43359' y='5469'>
+                <zone custom-title='true' h='73549' id='12' mode='list' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='9362' x='43359' y='5469'>
+                  <formatted-text>
+                    <run>Select Cause</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='7366' id='38' name='Forecasting' pane-specification-id='0' param='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Forecast Indicator:nk]' type-v2='color' w='9362' x='43359' y='79018'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='93638' id='20' name='Top Causes' w='46810' x='52721' y='5469'>
+                <layout-cache minheight='202' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size sizing-mode='automatic' />
+          <zones>
+            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97054' id='33' param='vert' type-v2='layout-flow' w='95734' x='2133' y='1473'>
+                <zone h='5894' id='15' type-v2='title' w='95734' x='2133' y='1473'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28422' id='5' is-fixed='true' name='Map - Deaths Per Capita' w='95734' x='2133' y='7367'>
+                  <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='5894' id='12' mode='list' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='95734' x='2133' y='35789'>
+                  <formatted-text>
+                    <run>Select Cause</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28422' id='20' is-fixed='true' name='Top Causes' w='95734' x='2133' y='41683'>
+                  <layout-cache cell-count-w='10' minheight='202' non-cell-size-w='70' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{61FF3A50-B7A2-419D-B625-A044C6A20269}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Deaths by Causes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{13F9ED6E-A99C-48A9-8558-BA1928D4E0A6}' />
+    </window>
+    <window class='worksheet' name='Most deaths - Bubble'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{854B4460-DC02-4584-8B04-43DA5EA492ED}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Map - Temperature'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.091u26n1vu7qvt191b1jc02r8eyg].[sum:Death Numbers:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{AC72D0C5-4C72-4567-A2CD-40FE65CE905C}' />
+    </window>
+    <window class='worksheet' name='Top Causes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CF7AC26D-4A50-440D-9196-B720645FEC5A}' />
+    </window>
+    <window class='worksheet' name='Time series'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card custom-title='true' mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84C7E4DE-7539-4611-8DEB-A51BB50D6CD0}' />
+    </window>
+    <window class='worksheet' name='Box Plot - deaths outliers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{51218BA2-9150-49B6-9B6E-4633AD2EF53A}' />
+    </window>
+    <window class='worksheet' name='Box Plot - country outliers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D42F5F6-26EE-4C5D-9DF4-B99BCB1ECFCF}' />
+    </window>
+    <window class='worksheet' name='Map - Deaths Per Capita'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.091u26n1vu7qvt191b1jc02r8eyg].[usr:Calculation_382243062475091969:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F09F8B54-AF08-453D-823D-F952F88F9FE7}' />
+    </window>
+    <window class='worksheet' name='Diseases Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B0814069-7C0F-4BFF-BC3B-8BA8D41F9C07}' />
+    </window>
+    <window class='worksheet' name='Forecasting'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Entity:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Causes name:nk]' type='filter' values='relevant' />
+            <card pane-specification-id='0' param='[federated.091u26n1vu7qvt191b1jc02r8eyg].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{00E2EFF0-B639-4276-96DA-30B1C623ABE2}' />
+    </window>
+    <window class='dashboard' name='Causes of Death - Dash'>
+      <viewpoints>
+        <viewpoint name='Forecasting'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map - Deaths Per Capita'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Causes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{D9F906AD-980F-4987-9BBF-2F86230F1BD7}' />
+    </window>
+  </windows>
+</workbook>
